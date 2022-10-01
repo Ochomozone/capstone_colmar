@@ -12,7 +12,7 @@ body {
     font-weight: 300;
     box-sizing: border-box;
 }
-header {
+header, footer {
     height: 64px;
     max-width: 100%;
     display: flex;
@@ -25,13 +25,13 @@ header #logo {
     padding: 0px 0px 0px 24px;
     justify-items: center;
 }
-header nav {
+header nav , #footer-right{
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24;
 }
-header ul {
+ul {
     list-style: none;
     display: flex;
     font-family: "Arial", "Verdana", sans-serif;
@@ -58,7 +58,7 @@ a {
     margin: 0 auto;
     justify-content: space-around;
 }
-#section-1 {
+#section-1,  #section-3 {
     background-color:seashell;
 }
 
@@ -71,27 +71,65 @@ a {
     padding: 2rem 1.5rem;
     
 }
-#section-1 #banner-text {
+#banner-text, #information {
     width: 40%;
     height: auto;
     display: flex;
-    flex-grow: 1;
     flex-direction: column;
-    padding: 2rem 1.5rem;
-    justify-content: space-around;
+    padding: 2em 1.5rem;
+    justify-content:space-around;
+    align-content:center;
+    margin: auto;
+    
 
 }
 img {
     width: 100%;
     height: auto;
 }
-#start {
+#start{
     background-color: gray;
 }
 #start p {
-    text-align: center;
+  
     color: white;
-    margin: .5rem auto;
+    margin: .5rem;
+    padding: 0 5rem;
+}
+#section-1 .v-container, #section-2 .v-container, #reimagine{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+}
+.information-image, .thesis-photo {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+#doesnt-hurt {
+    display: block
+}
+#subjects {
+    padding: 2rem 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.subject {
+    display: flex;
+    flex-direction: column;
+    min-width: 32%;
+    
+    margin: 0 2rem;
+
+    
+}
+#section-3 h2 , #section-4 h2{
+    text-align: center;
+    margin: 2rem auto;
 }
 section {
     display: flex;
