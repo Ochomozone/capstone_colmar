@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
+    <link href="./resources/css/style.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Colmar</title>
-    <link rel="stylesheet" href="./resources/css/style.css">
-  </head>
-  <body>
-   
+    <title>Custom Html Boilerplate</title>
+</head>
+<body>
     <header>
         <div id="logo">
             <img src="./resources/images/ic-logo.svg">
             <p><span class="logo colmar">
-                <strong>COLMAR</strong></span>
-                <span class=" logo academy">ACADEMY</span>
+                <strong>COLMAR</strong><span>ACADEMY</span>
             </p>
 
         </div>
@@ -28,185 +25,190 @@
         </nav>
 
     </header>
-    <div class="h-container" id="section-1">
-        <div class="v-container">
-            <img src="./resources/images/banner.jpg">
+    <div class="row" id="section-1">
+        <div class="left">
+            <img src="./resources/images/banner.jpg" 
+            alt="Banner">
+            
         </div>
-        <div id="banner-text">
-            <h2>Learn Something new everyday</h2>
-            <h3>Lorem ipsum dolor sit amet,
+        <div class="right">
+            <div id="info">
+                <h2>Learn Something new everyday</h2>
+                <h3>Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.
-            </h3>
-            <div id="start">
-                <p>Start here</p>
+                </h3>
+                <div id="start">
+                    <p>Start here</p>
+                </div>
             </div>
         </div>
+        
 
     </div>
-    <div class="h-container" id="section-2">
-        <div class="v-container">
-            <img src="./resources/images/information-main.jpg">
-            <div id="doesnt-hurt">
-                <h2>It doesn't hurt to keep practicing</h2>
-                <p class="quote">"Curabitur vitae libero in ipsum portitor
-                    conseqat. Aliquam et commodo lectus, nec consequat
-                    neque. Sed non accumsan urna. Phasellus sed 
-                    consequat ex. Etiam eget magna laoreet dolor 
-                    consequat, tristique ligula"
-                </p>
-                <p class="author">
-                    Emanuel, Sr Strategist at Hiring.com
-                </p>
+    <div class="row" id="section-2">
+        <div class="left">
+            <img src="./resources/images/information-main.jpg" 
+            alt="Main">
+            <h2>It doesn;t hurt to keep practicing</h2>
+            <p class="quote">"Curabitur vitae libero in ipsum portitor
+                conseqat. Aliquam et commodo lectus, nec consequat
+                neque. Sed non accumsan urna. Phasellus sed 
+                consequat ex. Etiam eget magna laoreet dolor 
+                consequat, tristique ligula"
+            </p>
+            <p class="author">
+                Emanuel, Sr Strategist at Hiring.com
+            </p>
+        </div>
+        <div class="right">
+            <div class="row" id="orientation">
+                <div class="left-35">
+                    <img src="./resources/images/information-orientation.jpg"
+                        alt="Orientation">
+                </div>
+                <div class="right-65">
+                    <div class="container">
+                        <h3>Orientation date</h3>
+                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                        <a>read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="campus">
+                <div class="left-35">
+                    <img src="./resources/images/information-campus.jpg"
+                        alt="Our campus">
+                </div>
+                <div class="right-65">
+                    <div class="container">
+                        <h3>Our campus</h3>
+                        <p>Find which campus is close to you</p>
+                        <a>read more</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row" id="guest">
+                <div class="left-35">
+                    <img src="./resources/images/information-guest-lecture.jpg"
+                        alt="Guest Lecturer">
+                </div>
+                <div class="right-65">
+                    <div class="container">
+                        <h3>Our guest lecture</h3>
+                        <p>Join a keynote with Oliver 
+                            Sack about music in medical treatment</p>
+                        <a>read more</a>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <div class="v-container" id="information">
-            <div class="h-container" id="orientation">
-                <div class="v-container" class="information-image">
-                    <img src="./resources/images/information-orientation.jpg" 
-                    alt="Orientation">
-                    
-                
-                </div>
-                <div class="v-container">
-                    <h3>Orientation date</h3>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                    <a>read more</a>
-                </div>
-            </div>
-            <div class="h-container" id="our-campus">
-                <div class="v-container" class="information-image">
-                    <img src="./resources/images/information-campus.jpg" 
-                    alt="Guest Lecture">
-                    
-                
-                </div>
-                <div class="v-container">
-                    <h3>Our campus</h3>
-                    <p>Find which campus is close to you</p>
-                    <a>read more</a>
-                </div>
-            </div>
-            <div class="h-container" id="guest">
-                <div class="v-container" class="information-image">
-                    <img src="./resources/images/information-guest-lecture.jpg" 
-                    alt="Guest Lecture">
-                    
-                
-                </div>
-                <div class="v-container">
-                    <h3>Our guest lecture</h3>
-                    <p>Join a keynote with Oliver 
-                        Sack about music in medical treatment</p>
-                    <a>read more</a>
-                </div>
-            </div>
-        </div>
-
     </div>
-    <div class="v-container" id="section-3">
-        <h2>Start Learning</h2>
-        <div class="h-container" id="subjects">
-            <div class="v-container" class="subject" id="soft-eng">
-                <img src="./resources/images/course-software.jpg" 
-                alt="software engineering">
-                <div class="subject-text">
+    <div id="section-3" class="container">
+        <h2 id="learning">Start learning</h2>
+        <div  id="subjects">
+            <div class="subject">
+                <img src="./resources/images/course-software.jpg"
+                    alt="software engineering">
+`               <div class="subject-text">
                     <h2>Software engineering</h2>
                     <p>COURSES</p>
-                    Web Development, Mobile Development,
-                    iOT, APIs
+                    <p>Web Development, Mobile Development,
+                        iOT, APIs
+                    </p>
                 </div>
             </div>
-            <div class="v-container" class="subject" id="computer-art">
-                <img src="./resources/images/course-computer-art.jpg" 
-                alt="computer art">
-                <div class="subject-text">
+            <div class="subject">
+                <img src="./resources/images/course-computer-art.jpg"
+                    alt="">
+`               <div class="subject-text">
                     <h2>Computer art</h2>
                     <p>COURSES</p>
-                    Imaging & Design, Web Design, Motion Graphincs
-                    & Visual Effects, Computer Animation
+                    <p>Imaging & Design, Web Design, Motion Graphincs
+                        & Visual Effects, Computer Animation
+                    </p>
                 </div>
             </div>
-            <div class="v-container" class="subject" id="design">
+            <div class="subject">
                 <img src="./resources/images/course-design.jpg" 
                 alt="design">
                 <div class="subject-text">
                     <h2>Design</h2>
                     <p>COURSES</p>
-                    User Experience Design, User Research,
-                    Visual Design
+                    <p>User Experience Design, User Research,
+                    Visual Design</p>
                 </div>
             </div>
-            <div class="v-container" class="subject" id="data">
+            <div class="subject">
                 <img src="./resources/images/course-data.jpg" 
                 alt="data">
                 <div class="subject-text">
                     <h2>Data</h2>
                     <p>COURSES</p>
-                    Data Science, Big Data, SQL, Data 
-                    Visualization
+                    <p>Data Science, Big Data, SQL, Data 
+                    Visualization</p>
                 </div>
             </div>
-            <div class="v-container" class="subject" id="business">
+            <div class="subject">
                 <img src="./resources/images/course-business.jpg" 
                 alt="business">
                 <div class="subject-text">
                     <h2>Business</h2>
                     <p>COURSES</p>
-                    Product Development, Business Development, Startup
+                    <p>Product Development, Business Development, Startup</p>
                 </div>
             </div>
-            <div class="v-container" class="subject" id="Marketing">
+            <div class="subject">
                 <img src="./resources/images/course-marketing.jpg" 
                 alt="Marketing">
                 <div class="subject-text">
                     <h2>Marketing</h2>
                     <p>COURSES</p>
-                    Analytics, Content Marketing, Mobilr marketing
+                    <p>Analytics, Content Marketing, Mobilr marketing</p>
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="v-container" id="section-4">
-        <h2>Thesis exhibit</h2>
-        <div class="h-container" id="thesis-section">
-            <div class="v-container" id="reimagine">
-                <div>
-                    <video width="100%" height="auto" autoplay="autoplay " muted  playsinline>
-                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
-                    </video>
-                    <h3>Reimagine urban</h3>
-                    <p>"Curabitur vitae libero in ipsum portitor
-                        conseqat. Aliquam et commodo lectus, nec consequat
-                        neque. Sed non accumsan urna. Phasellus sed 
-                        consequat ex. Etiam eget magna laoreet dolor 
-                        consequat, tristique ligula"</p>
-                </div>
+    <div class="container" id="section-4">
+        <h2 id="thesis">Thesis exhibit</h2>
+        <div class="row">
+            <div class="left" id="reimagine">
+                <video width="100%" height="auto" autoplay="autoplay " muted  playsinline>
+                    <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                </video>
+                <h3>Reimagine urban</h3>
+                <p>"Curabitur vitae libero in ipsum portitor
+                    conseqat. Aliquam et commodo lectus, nec consequat
+                    neque. Sed non accumsan urna. Phasellus sed 
+                    consequat ex. Etiam eget magna laoreet dolor 
+                    consequat, tristique ligula"</p>
             </div>
-            <div class="v-container" id="side-thesis">
-                <div class="h-container" id="fisma">
-                    <div class="v-container"  id="thesis-photo">
-                        <img src="./resources/images/thesis-fisma.jpg"
-                        alt="fisma thesis">
+            <div class="right">
+                <div id="fisma" class="row">
+                    <div class="left-35">
+                        <img src="./resources/images/thesis-fisma.jpg" alt="">
+                        
                     </div>
-                    <div class="v-container" id="fisma-text">
+                    <div class="right-65">
                         <h3>Fisma:Design and Prototype</h3>
                         <p>Designer showcase of new prototype product</p>
                     </div>
+
                 </div>
-                <div class="h-container" id="now-and-then">
-                    <div class="v-container" id="thesis-photo">
-                        <img src="./resources/images/thesis-now-and-then.jpg"
-                        alt="fisma thesis">
+                <div id="now-and-then" class="row">
+                    <div class="left-35">
+                        <img src="./resources/images/thesis-now-and-then.jpg" alt="">
+                        
                     </div>
-                    <div class="v-container" id="now-and-then-text">
+                    <div class="right-65">
                         <h3>Now and then</h3>
                         <p>Research study about New York</p>
                     </div>
                 </div>
+
             </div>
         </div>
-
     </div>
     <footer>
         <p>&COPY 2016 Colmar Academy. All rights reserved</p>
@@ -217,5 +219,6 @@
             </ul>
         </div>
     </footer>
-  </body>
-</html>
+
+
+</body>
