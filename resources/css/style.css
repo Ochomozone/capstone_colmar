@@ -160,21 +160,28 @@ header span {
     display:block;
 }
 img {
-    width:inherit;
-    height:auto;
+    
     overflow:  hidden;
+    margin: 0 auto;
 }
-.left, .right, #info, .left-35, .right-65 {
+
+}
+.left, .right, #info, .right-65 {
     display: block;
-    width: 100vw;
+    width: 95vw;
+}
+.left-35 {
+    width: 95vw;
+    margin: 0 auto;
+    padding:0
 }
 .row {
    display:block;
-    width: 100vw;
+    width: 95vw;
     margin: .5rem;
 }
 .container {
-    width: 100vw;
+    width: 95vw;
     overflow:hidden;
 }
 
